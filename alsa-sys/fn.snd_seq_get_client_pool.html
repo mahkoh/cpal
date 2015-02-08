@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `snd_seq_get_client_pool` fn in crate `alsa-sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, snd_seq_get_client_pool">
+
+    <title>alsa-sys::snd_seq_get_client_pool - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>alsa-sys</a></p><div class='block struct'><h2>Structs</h2><a class='struct ' href='struct.Struct_Unnamed5.html' title=''>Struct_Unnamed5</a><a class='struct ' href='struct.Struct_Unnamed6.html' title=''>Struct_Unnamed6</a><a class='struct ' href='struct.Struct_Unnamed7.html' title=''>Struct_Unnamed7</a><a class='struct ' href='struct.Struct_Unnamed8.html' title=''>Struct_Unnamed8</a><a class='struct ' href='struct.Struct__IO_FILE.html' title=''>Struct__IO_FILE</a><a class='struct ' href='struct.Struct__IO_marker.html' title=''>Struct__IO_marker</a><a class='struct ' href='struct.Struct___locale_struct.html' title=''>Struct___locale_struct</a><a class='struct ' href='struct.Struct___pthread_internal_list.html' title=''>Struct___pthread_internal_list</a><a class='struct ' href='struct.Struct___pthread_mutex_s.html' title=''>Struct___pthread_mutex_s</a><a class='struct ' href='struct.Struct__snd_pcm_channel_area.html' title=''>Struct__snd_pcm_channel_area</a><a class='struct ' href='struct.Struct__snd_pcm_scope_ops.html' title=''>Struct__snd_pcm_scope_ops</a><a class='struct ' href='struct.Struct__snd_timer_read.html' title=''>Struct__snd_timer_read</a><a class='struct ' href='struct.Struct__snd_timer_tread.html' title=''>Struct__snd_timer_tread</a><a class='struct ' href='struct.Struct_drand48_data.html' title=''>Struct_drand48_data</a><a class='struct ' href='struct.Struct_flock.html' title=''>Struct_flock</a><a class='struct ' href='struct.Struct_itimerspec.html' title=''>Struct_itimerspec</a><a class='struct ' href='struct.Struct_pollfd.html' title=''>Struct_pollfd</a><a class='struct ' href='struct.Struct_random_data.html' title=''>Struct_random_data</a><a class='struct ' href='struct.Struct_snd_aes_iec958.html' title=''>Struct_snd_aes_iec958</a><a class='struct ' href='struct.Struct_snd_devname.html' title=''>Struct_snd_devname</a><a class='struct ' href='struct.Struct_snd_dlsym_link.html' title=''>Struct_snd_dlsym_link</a><a class='struct ' href='struct.Struct_snd_mixer_selem_regopt.html' title=''>Struct_snd_mixer_selem_regopt</a><a class='struct ' href='struct.Struct_snd_pcm_chmap.html' title=''>Struct_snd_pcm_chmap</a><a class='struct ' href='struct.Struct_snd_pcm_chmap_query.html' title=''>Struct_snd_pcm_chmap_query</a><a class='struct ' href='struct.Struct_snd_seq_addr.html' title=''>Struct_snd_seq_addr</a><a class='struct ' href='struct.Struct_snd_seq_connect.html' title=''>Struct_snd_seq_connect</a><a class='struct ' href='struct.Struct_snd_seq_ev_ctrl.html' title=''>Struct_snd_seq_ev_ctrl</a><a class='struct ' href='struct.Struct_snd_seq_ev_ext.html' title=''>Struct_snd_seq_ev_ext</a><a class='struct ' href='struct.Struct_snd_seq_ev_note.html' title=''>Struct_snd_seq_ev_note</a><a class='struct ' href='struct.Struct_snd_seq_ev_queue_control.html' title=''>Struct_snd_seq_ev_queue_control</a><a class='struct ' href='struct.Struct_snd_seq_ev_raw32.html' title=''>Struct_snd_seq_ev_raw32</a><a class='struct ' href='struct.Struct_snd_seq_ev_raw8.html' title=''>Struct_snd_seq_ev_raw8</a><a class='struct ' href='struct.Struct_snd_seq_event.html' title=''>Struct_snd_seq_event</a><a class='struct ' href='struct.Struct_snd_seq_queue_skew.html' title=''>Struct_snd_seq_queue_skew</a><a class='struct ' href='struct.Struct_snd_seq_real_time.html' title=''>Struct_snd_seq_real_time</a><a class='struct ' href='struct.Struct_snd_seq_result.html' title=''>Struct_snd_seq_result</a><a class='struct ' href='struct.Struct_stat.html' title=''>Struct_stat</a><a class='struct ' href='struct.Struct_timespec.html' title=''>Struct_timespec</a><a class='struct ' href='struct.Struct_timeval.html' title=''>Struct_timeval</a><a class='struct ' href='struct.Struct_tm.html' title=''>Struct_tm</a><a class='struct ' href='struct.Union_Unnamed10.html' title=''>Union_Unnamed10</a><a class='struct ' href='struct.Union_Unnamed4.html' title=''>Union_Unnamed4</a><a class='struct ' href='struct.Union_Unnamed9.html' title=''>Union_Unnamed9</a><a class='struct ' href='struct.Union__snd_pcm_sync_id.html' title=''>Union__snd_pcm_sync_id</a><a class='struct ' href='struct.Union_pthread_attr_t.html' title=''>Union_pthread_attr_t</a><a class='struct ' href='struct.Union_snd_seq_timestamp.html' title=''>Union_snd_seq_timestamp</a><a class='struct ' href='struct.Union_wait.html' title=''>Union_wait</a><a class='struct ' href='struct._G_fpos64_t.html' title=''>_G_fpos64_t</a><a class='struct ' href='struct._G_fpos_t.html' title=''>_G_fpos_t</a><a class='struct ' href='struct.__WAIT_STATUS.html' title=''>__WAIT_STATUS</a><a class='struct ' href='struct.__fsid_t.html' title=''>__fsid_t</a><a class='struct ' href='struct.__mbstate_t.html' title=''>__mbstate_t</a><a class='struct ' href='struct.__sigset_t.html' title=''>__sigset_t</a><a class='struct ' href='struct.div_t.html' title=''>div_t</a><a class='struct ' href='struct.fd_set.html' title=''>fd_set</a><a class='struct ' href='struct.ldiv_t.html' title=''>ldiv_t</a><a class='struct ' href='struct.lldiv_t.html' title=''>lldiv_t</a><a class='struct ' href='struct.pthread_barrier_t.html' title=''>pthread_barrier_t</a><a class='struct ' href='struct.pthread_barrierattr_t.html' title=''>pthread_barrierattr_t</a><a class='struct ' href='struct.pthread_cond_t.html' title=''>pthread_cond_t</a><a class='struct ' href='struct.pthread_condattr_t.html' title=''>pthread_condattr_t</a><a class='struct ' href='struct.pthread_mutex_t.html' title=''>pthread_mutex_t</a><a class='struct ' href='struct.pthread_mutexattr_t.html' title=''>pthread_mutexattr_t</a><a class='struct ' href='struct.pthread_rwlock_t.html' title=''>pthread_rwlock_t</a><a class='struct ' href='struct.pthread_rwlockattr_t.html' title=''>pthread_rwlockattr_t</a></div><div class='block enum'><h2>Enums</h2><a class='enum ' href='enum.Struct__IO_FILE_plus.html' title=''>Struct__IO_FILE_plus</a><a class='enum ' href='enum.Struct__IO_jump_t.html' title=''>Struct__IO_jump_t</a><a class='enum ' href='enum.Struct___locale_data.html' title=''>Struct___locale_data</a><a class='enum ' href='enum.Struct__snd_async_handler.html' title=''>Struct__snd_async_handler</a><a class='enum ' href='enum.Struct__snd_config.html' title=''>Struct__snd_config</a><a class='enum ' href='enum.Struct__snd_config_iterator.html' title=''>Struct__snd_config_iterator</a><a class='enum ' href='enum.Struct__snd_config_update.html' title=''>Struct__snd_config_update</a><a class='enum ' href='enum.Struct__snd_ctl.html' title=''>Struct__snd_ctl</a><a class='enum ' href='enum.Struct__snd_ctl_card_info.html' title=''>Struct__snd_ctl_card_info</a><a class='enum ' href='enum.Struct__snd_ctl_elem_id.html' title=''>Struct__snd_ctl_elem_id</a><a class='enum ' href='enum.Struct__snd_ctl_elem_info.html' title=''>Struct__snd_ctl_elem_info</a><a class='enum ' href='enum.Struct__snd_ctl_elem_list.html' title=''>Struct__snd_ctl_elem_list</a><a class='enum ' href='enum.Struct__snd_ctl_elem_value.html' title=''>Struct__snd_ctl_elem_value</a><a class='enum ' href='enum.Struct__snd_ctl_event.html' title=''>Struct__snd_ctl_event</a><a class='enum ' href='enum.Struct__snd_hctl.html' title=''>Struct__snd_hctl</a><a class='enum ' href='enum.Struct__snd_hctl_elem.html' title=''>Struct__snd_hctl_elem</a><a class='enum ' href='enum.Struct__snd_hwdep.html' title=''>Struct__snd_hwdep</a><a class='enum ' href='enum.Struct__snd_hwdep_dsp_image.html' title=''>Struct__snd_hwdep_dsp_image</a><a class='enum ' href='enum.Struct__snd_hwdep_dsp_status.html' title=''>Struct__snd_hwdep_dsp_status</a><a class='enum ' href='enum.Struct__snd_hwdep_info.html' title=''>Struct__snd_hwdep_info</a><a class='enum ' href='enum.Struct__snd_input.html' title=''>Struct__snd_input</a><a class='enum ' href='enum.Struct__snd_mixer.html' title=''>Struct__snd_mixer</a><a class='enum ' href='enum.Struct__snd_mixer_class.html' title=''>Struct__snd_mixer_class</a><a class='enum ' href='enum.Struct__snd_mixer_elem.html' title=''>Struct__snd_mixer_elem</a><a class='enum ' href='enum.Struct__snd_mixer_selem_id.html' title=''>Struct__snd_mixer_selem_id</a><a class='enum ' href='enum.Struct__snd_output.html' title=''>Struct__snd_output</a><a class='enum ' href='enum.Struct__snd_pcm.html' title=''>Struct__snd_pcm</a><a class='enum ' href='enum.Struct__snd_pcm_access_mask.html' title=''>Struct__snd_pcm_access_mask</a><a class='enum ' href='enum.Struct__snd_pcm_format_mask.html' title=''>Struct__snd_pcm_format_mask</a><a class='enum ' href='enum.Struct__snd_pcm_hook.html' title=''>Struct__snd_pcm_hook</a><a class='enum ' href='enum.Struct__snd_pcm_hw_params.html' title=''>Struct__snd_pcm_hw_params</a><a class='enum ' href='enum.Struct__snd_pcm_info.html' title=''>Struct__snd_pcm_info</a><a class='enum ' href='enum.Struct__snd_pcm_scope.html' title=''>Struct__snd_pcm_scope</a><a class='enum ' href='enum.Struct__snd_pcm_status.html' title=''>Struct__snd_pcm_status</a><a class='enum ' href='enum.Struct__snd_pcm_subformat_mask.html' title=''>Struct__snd_pcm_subformat_mask</a><a class='enum ' href='enum.Struct__snd_pcm_sw_params.html' title=''>Struct__snd_pcm_sw_params</a><a class='enum ' href='enum.Struct__snd_rawmidi.html' title=''>Struct__snd_rawmidi</a><a class='enum ' href='enum.Struct__snd_rawmidi_info.html' title=''>Struct__snd_rawmidi_info</a><a class='enum ' href='enum.Struct__snd_rawmidi_params.html' title=''>Struct__snd_rawmidi_params</a><a class='enum ' href='enum.Struct__snd_rawmidi_status.html' title=''>Struct__snd_rawmidi_status</a><a class='enum ' href='enum.Struct__snd_sctl.html' title=''>Struct__snd_sctl</a><a class='enum ' href='enum.Struct__snd_seq.html' title=''>Struct__snd_seq</a><a class='enum ' href='enum.Struct__snd_seq_client_info.html' title=''>Struct__snd_seq_client_info</a><a class='enum ' href='enum.Struct__snd_seq_client_pool.html' title=''>Struct__snd_seq_client_pool</a><a class='enum ' href='enum.Struct__snd_seq_port_info.html' title=''>Struct__snd_seq_port_info</a><a class='enum ' href='enum.Struct__snd_seq_port_subscribe.html' title=''>Struct__snd_seq_port_subscribe</a><a class='enum ' href='enum.Struct__snd_seq_query_subscribe.html' title=''>Struct__snd_seq_query_subscribe</a><a class='enum ' href='enum.Struct__snd_seq_queue_info.html' title=''>Struct__snd_seq_queue_info</a><a class='enum ' href='enum.Struct__snd_seq_queue_status.html' title=''>Struct__snd_seq_queue_status</a><a class='enum ' href='enum.Struct__snd_seq_queue_tempo.html' title=''>Struct__snd_seq_queue_tempo</a><a class='enum ' href='enum.Struct__snd_seq_queue_timer.html' title=''>Struct__snd_seq_queue_timer</a><a class='enum ' href='enum.Struct__snd_seq_remove_events.html' title=''>Struct__snd_seq_remove_events</a><a class='enum ' href='enum.Struct__snd_seq_system_info.html' title=''>Struct__snd_seq_system_info</a><a class='enum ' href='enum.Struct__snd_timer.html' title=''>Struct__snd_timer</a><a class='enum ' href='enum.Struct__snd_timer_ginfo.html' title=''>Struct__snd_timer_ginfo</a><a class='enum ' href='enum.Struct__snd_timer_gparams.html' title=''>Struct__snd_timer_gparams</a><a class='enum ' href='enum.Struct__snd_timer_gstatus.html' title=''>Struct__snd_timer_gstatus</a><a class='enum ' href='enum.Struct__snd_timer_id.html' title=''>Struct__snd_timer_id</a><a class='enum ' href='enum.Struct__snd_timer_info.html' title=''>Struct__snd_timer_info</a><a class='enum ' href='enum.Struct__snd_timer_params.html' title=''>Struct__snd_timer_params</a><a class='enum ' href='enum.Struct__snd_timer_query.html' title=''>Struct__snd_timer_query</a><a class='enum ' href='enum.Struct__snd_timer_status.html' title=''>Struct__snd_timer_status</a><a class='enum ' href='enum.Struct_sigevent.html' title=''>Struct_sigevent</a><a class='enum ' href='enum.Struct_snd_midi_event.html' title=''>Struct_snd_midi_event</a><a class='enum ' href='enum.Struct_snd_shm_area.html' title=''>Struct_snd_shm_area</a></div>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content fn">
+<h1 class='fqn'><span class='in-band'><a href='index.html'>alsa-sys</a>::<wbr><a class='fn' href=''>snd_seq_get_client_pool</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]
+            </a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-24941' href='../src/alsa-sys/lib.rs.html#5216-5218'>[src]</a></span></h1>
+<pre class='rust fn'>pub unsafe fn snd_seq_get_client_pool(handle: *mut <a class='type' href='../alsa-sys/type.snd_seq_t.html' title='alsa-sys::snd_seq_t'>snd_seq_t</a>, info: *mut <a class='type' href='../alsa-sys/type.snd_seq_client_pool_t.html' title='alsa-sys::snd_seq_client_pool_t'>snd_seq_client_pool_t</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a></pre></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "alsa-sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
